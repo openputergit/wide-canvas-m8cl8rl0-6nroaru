@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoodleDict - Draw, Learn, and Remember Vocabulary</title>
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .neu-brutal {
+            border: 3px solid #000;
+            box-shadow: 4px 4px 0 #000;
+            transition: all 0.2s ease;
+        }
+        .neu-brutal:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #000;
+        }
+        .feature-card {
+            background: #FFE577;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="px-4 py-6 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="flex items-center gap-2">
+            <i class="bi bi-pencil-fill text-2xl"></i>
+            <span class="text-xl font-bold">DoodleDict</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+            <a href="#" class="font-medium">Home</a>
+            <a href="#" class="font-medium">Features</a>
+            <a href="#" class="font-medium">How it Works</a>
+            <a href="#" class="font-medium">Pricing</a>
+        </div>
+        <div class="flex gap-4">
+            <button class="neu-brutal px-4 py-2 bg-white">Login</button>
+            <button class="neu-brutal px-4 py-2 bg-yellow-300">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h1 class="text-5xl font-bold leading-tight mb-6">
+                    Draw, Learn, and Remember <span class="text-orange-500">Vocabulary</span> with Fun!
+                </h1>
+                <p class="text-xl mb-8">Help your brain master new words through the power of drawing and creative learning.</p>
+                <div class="flex gap-4">
+                    <button class="neu-brutal px-6 py-3 bg-yellow-300 font-bold">Get Started Free</button>
+                    <button class="neu-brutal px-6 py-3 bg-white font-bold">See How it Works</button>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="neu-brutal p-6 bg-yellow-100 rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd" alt="Drawing Interface" class="rounded-lg w-full">
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <section class="py-20">
+            <h2 class="text-4xl font-bold text-center mb-16">Features Designed for Young Learners</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card neu-brutal p-6">
+                    <i class="bi bi-pencil-square text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Creative Drawing</h3>
+                    <p>Express vocabulary through artistic drawings and memorable visual associations.</p>
+                </div>
+                <div class="feature-card neu-brutal p-6">
+                    <i class="bi bi-eye text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Visual Memory</h3>
+                    <p>Enhance retention through visual connections and interactive practice.</p>
+                </div>
+                <div class="feature-card neu-brutal p-6">
+                    <i class="bi bi-graph-up-arrow text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Gamified Learning</h3>
+                    <p>Learn through engaging activities and progress tracking systems.</p>
+                </div>
+                <div class="feature-card neu-brutal p-6">
+                    <i class="bi bi-book text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Extensive Dictionary</h3>
+                    <p>Access comprehensive word collections suitable for different learning levels.</p>
+                </div>
+                <div class="feature-card neu-brutal p-6">
+                    <i class="bi bi-trophy text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Progress Tracking</h3>
+                    <p>Monitor learning achievements and vocabulary mastery over time.</p>
+                </div>
+                <div class="feature-card neu-brutal p-6">
+                    <i class="bi bi-person-check text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Personalized Learning</h3>
+                    <p>Adaptive learning paths based on individual progress and preferences.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="py-20">
+            <h2 class="text-4xl font-bold text-center mb-16">How DoodleDict Works</h2>
+            <div class="flex flex-col gap-8">
+                <div class="neu-brutal p-6 bg-yellow-50">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-300 flex items-center justify-center neu-brutal">1</div>
+                        <h3 class="text-xl font-bold">Learn New Words</h3>
+                    </div>
+                    <p class="mt-4">Get introduced to new vocabulary through interactive learning modules.</p>
+                </div>
+                <div class="neu-brutal p-6 bg-yellow-50">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-300 flex items-center justify-center neu-brutal">2</div>
+                        <h3 class="text-xl font-bold">Create Doodles</h3>
+                    </div>
+                    <p class="mt-4">Draw and associate images with words to strengthen memory connections.</p>
+                </div>
+                <div class="neu-brutal p-6 bg-yellow-50">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-300 flex items-center justify-center neu-brutal">3</div>
+                        <h3 class="text-xl font-bold">Practice & Remember</h3>
+                    </div>
+                    <p class="mt-4">Review and practice through fun exercises and games.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-yellow-50 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i class="bi bi-pencil-fill text-2xl"></i>
+                    <span class="text-xl font-bold">DoodleDict</span>
+                </div>
+                <p>© 2023 DoodleDict. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
